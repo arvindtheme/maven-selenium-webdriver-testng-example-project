@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+   name: localagent
+   demands:
+       - agent.name -equals arv
 
 steps:
 - task: Maven@3
