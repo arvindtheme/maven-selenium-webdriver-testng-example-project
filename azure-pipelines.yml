@@ -10,6 +10,7 @@ pool:
    name: localagent
    demands:
        - agent.name -equals arv
+       - agent.version -equals 2.204.0
 
 steps:
 - task: Maven@3
